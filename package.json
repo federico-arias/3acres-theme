@@ -1,0 +1,11 @@
+{
+  "name": "federico-arias.github.io",
+  "version": "1.0.0",
+  "description": "A simple blog template for Hugo",
+  "author": "Federico Arias Recabarren",
+  "license": "ISC",
+  "dependencies": {
+    "modularscale-sass": "^3.0.8",
+    "susy": "^2.0.5"
+  }
+}
