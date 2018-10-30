@@ -4,7 +4,6 @@ article {
     p,
     ol,
     ul,
-    figure,
     pre,
     dd,
     table,
@@ -20,6 +19,10 @@ article {
     blockquote {
         @extend %content;
 		margin-bottom: 1.5em;
+	}
+
+	figure {
+		@extend %small;
 	}
 
     hgroup,
