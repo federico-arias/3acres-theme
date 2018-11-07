@@ -1,5 +1,11 @@
 @import "helpers/rhythm";
 
+article li > p {
+	font-size:inherit;
+	margin-bottom: inherit;
+	line-height: 1.5;
+}
+
 article {
     p,
     ol,
