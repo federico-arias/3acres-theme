@@ -1,4 +1,5 @@
 @import "helpers/rhythm";
+@import "breakpoints";
 
 .highlight {
     padding-top:1.5 * 1.618em;
@@ -17,4 +18,13 @@ article > p > code {
 	border: 2px solid #ddd;
 	border-radius: 6px;
 	background-color: #60ff004d;
+}
+
+.highlight code {
+	padding-left: 11px;
+
+	@include respond-to('small') {
+		padding-left: 0px;
+
+	}
 }
