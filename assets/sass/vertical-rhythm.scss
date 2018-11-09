@@ -27,7 +27,7 @@ $stripe: $line-height-ratio * ms(1);
     @return $level * $line-height-em / $level-factor;
 }
 
-body, blockquote, article, p, li, ol, ul, h1, h2, h3, img, pre, code {
+body, blockquote, article, p, li, ol, ul, h1, h2, h3, img, pre, code, figure {
   padding:0;
   margin:0;
 }
