@@ -117,7 +117,7 @@ header {
 }
 
 $susy: (
-  /* Tells Susy to use 12 columns */
+  /* Tells Susy to use 3 columns */
   columns: 3,
   /* Tells Susy that the container fills the width of the viewport*/
   container: 80em,
@@ -149,3 +149,45 @@ $susy: (
         @include span (2 of 3 last);
     }
 }
+
+$susy: (
+  /* Tells Susy to use 6 columns */
+  columns: 6,
+  /* Tells Susy that the container fills the width of the viewport*/
+  container: 80em,
+  /* Tells Susy to use border-box */
+  global-box-sizing: border-box,
+  gutters: .18,
+  debug: (
+    color: blue,
+  )
+);
+
+.home-section {
+	@include container;
+}
+
+.skill-logo {
+	@include span (1 of 6);
+
+    @include respond-to('small') {
+        @include span (1 of 12);
+    }
+}
+
+.skill-logo:nth-child(3) {
+	@include span (1 of 6 last);
+
+    @include respond-to('small') {
+        @include span (1 of 12);
+    }
+}
+
+.skill-logo:last-child {
+	@include span (1 of 6 last);
+    @include respond-to('small') {
+        @include span (1 of 12 last);
+    }
+}
+
+

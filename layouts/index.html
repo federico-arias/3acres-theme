@@ -7,15 +7,53 @@
 
 {{ partial "welcome.html" . }}
 
+	<div class="skills home-section">
+		<h2>
+			Skills
+		</h2>
+		<img class="skill-logo" src="/python.jpg"></img>
+		<img class="skill-logo" src="/d3.png"></img>
+		<img class="skill-logo" src="/golang.png"></img>
+		<img class="skill-logo" src="/react.png"></img>
+		<img class="skill-logo" src="/postgres.png"></img>
+		<img class="skill-logo" src="/scala.png" style="margin-top:-5px"></img>
+		<img class="skill-logo" src="/redux.png"></img>
+		<img class="skill-logo" src="/sass.png"></img>
+		<img class="skill-logo" src="/git.png"></img>
+		<img class="skill-logo" src="/docker.png"></img>
+		<img class="skill-logo" src="/linux.png"></img>
+		<img class="skill-logo" src="/bash.png"></img>
+	</div>
+	<div class="github-calendar home-section">
+		<h2>
+		   Github contributions 
+		</h2>
+		<div class="calendar">
+			Loading data...
+		</div>
+	</div>
     <div class="about"> 
         <div class="whoami">
             <h2>
-                Skills
+               Licence 
             </h2>
-			{{ .Content }}
-            <div class="button">
-                <a href="/about">Read more &raquo;</a>
-            </div>
+			<p>
+				This work is licensed under a 
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+					Creative Commons Attribution 4.0 International License
+				</a>.		
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+					<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+			</p>
+			<!--
+			<div class="so-flair">
+				<a href="https://stackoverflow.com/users/1797161/federico"><img src="https://stackoverflow.com/users/flair/1797161.png" width="208" height="58" alt="profile for Federico at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Federico at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>	
+			</div>
+				<iframe height='160' 
+					width='300' frameborder='0' allowtransparency='true' scrolling='no' 
+					src='https://www.strava.com/athletes/30285650/activity-summary/70ba9dd77ed34d9b09cb322f5720847e0eccf811'>
+				</iframe>
+			-->
         </div>
         <div class="latest-articles">
             <h2>
@@ -32,6 +70,11 @@
 				{{ end }}
 			</ul>
 		</div>
+		<!-- Include the library. -->
+
+		<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+
+		<!-- Prepare a container for your calendar. -->
 
 		<!--
         <div class="latest-articles">

@@ -100,6 +100,12 @@ body {
 	line-height: $line-height-ratio;
 }
 
+.home-section h2 {
+    padding:vr(1) + em 0;
+    font-size:ms(1);
+    line-height:vr(1);
+}
+
 .about {
 
     h2 {
